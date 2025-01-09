@@ -1,0 +1,152 @@
+:root {
+    --bg: #FFF5E1;
+    --judul: #dc1414;
+    --jd: #FFA500;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--jd);
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav .logo a{
+    text-decoration: none;
+}
+.nav .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: var(--jd);
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.nav .logo b{
+    color: var(--jd);
+}
+
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    text-decoration:none ;
+    color: var(--jd);
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-right: 20px ;
+}
+
+.nav ul li a:hover{
+    color: var(--judul);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: var(--judul);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.section {
+    margin-top: 30px;
+}
+.section h2 {
+    color: var(--jd);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 3px solid var(--judul);
+    padding-bottom: 5px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    color: var(--jd);
+}
+.menu-item:last-child {
+    border-bottom: none;
+}
+.menu-item span {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+@media only screen and (max-width : 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    .nav .menu-toggle{
+      display: block;
+    }
+  
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+  
+    .nav ul.active{
+        display: flex;
+    }
+  
+    .nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+  
+    nav ul li:last-of-type {
+      padding-bottom: 8px;
+    }
+  
+    nav ul.hidden {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: flex;
+      align-items: center;
+    }
+  } 
