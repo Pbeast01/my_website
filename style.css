@@ -609,8 +609,69 @@
   }
   
   /* Mobile Phone */
-  @media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
   }
+
+  .navbar {
+    padding: 1rem 5%;
+  }
+
+  .navbar .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero .content {
+    top: 100px;
+    padding: 1rem 5%;
+  }
+
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .content p {
+    font-size: 1.2rem;
+  }
+
+  .about .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .about .row .about-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .menu .row .menu-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .products .row {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .map {
+    height: 20rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
